@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TriviaGame</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1 class="h1 text-md-center h1Margin text-danger">Trivia Fun</h1>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+        <h1 class="h1 text-center text-primary gameScoreText">Score: <span class="text-primary gameScore"></span></h1>	
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-primary mb-2" id="buttonHit">Start the Game </button>
+            <button class="btn btn-primary mb-2 float-right noHover">Time: <span class="badge badge-primary" id="time">00:30</span></button>
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active question" id="question" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Click "Start" to start the game</a>
+                <a class="list-group-item list-group-item-action answerBtn1 answerBtn" id="answer1" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile"></a>
+                <a class="list-group-item list-group-item-action answerBtn2 answerBtn" id="answer2" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"></a>
+                <a class="list-group-item list-group-item-action answerBtn3 answerBtn" id="answer3" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"></a>
+                <a class="list-group-item list-group-item-action answerBtn4 answerBtn" id="answer4" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"></a>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js" type="text/javascript"></script>
+</body>
+
+</html>
